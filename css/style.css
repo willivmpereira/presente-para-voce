@@ -33,7 +33,7 @@ section.one h1 {
   color: #e7cfbc;
 }
 section.one p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #e7cfbc;
 }
 section.one span {
@@ -277,4 +277,9 @@ canvas {
   box-shadow: 6px 5px 8px black;
   background-color: #966b9d;
   color: #fff4ec;
+}
+@media screen and (max-width: 768px) {
+  #runaway-btn {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
