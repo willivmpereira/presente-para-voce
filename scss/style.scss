@@ -27,6 +27,7 @@ section {
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
+        min-height: 100vh;
         height: auto;
         padding: 2rem 0;
     }
@@ -80,6 +81,7 @@ section {
 
         h2 {
             font-size: 2rem;
+            line-height: 2.2rem;
             margin-bottom: 1rem;
             color: $champagne;
         }
@@ -137,7 +139,7 @@ section {
             font-size: 2rem;
             margin-bottom: 1rem;
             color: $champagne;
-
+            line-height: 2.2rem;
         }
         
         ul {

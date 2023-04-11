@@ -21,6 +21,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   section {
+    min-height: 100vh;
     height: auto;
     padding: 2rem 0;
   }
@@ -68,6 +69,7 @@ section.two {
 }
 section.two h2 {
   font-size: 2rem;
+  line-height: 2.2rem;
   margin-bottom: 1rem;
   color: #e7cfbc;
 }
@@ -118,6 +120,7 @@ section.three h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #e7cfbc;
+  line-height: 2.2rem;
 }
 section.three ul {
   list-style: none;
