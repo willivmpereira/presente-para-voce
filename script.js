@@ -19,9 +19,8 @@ screenTwo.forEach((item, index) => {
 
 screenTwo.forEach(function (div, index) {
   div.addEventListener("click", function () {
-
-    if (div.textContent == "Eu? 🤔 La eleee") {
-        alert('Achou mesmo que eu seria fácil? Me paga um jantar primeiro né 😏')
+    if (div.textContent == "Eu? 🤔La eleee") {
+        alert('Achou mesmo que seria fácil assim? Me paga um jantar primeiro né 😏')
     } else {
         localStorage.setItem("comida", div.textContent);
         document.querySelector("#button02").classList.add("animation")
