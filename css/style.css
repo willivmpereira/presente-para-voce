@@ -27,7 +27,7 @@ section {
   section {
     min-height: 100vh;
     height: auto;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
   }
 }
 section .container {
@@ -229,7 +229,6 @@ section.five {
 section.five .actions {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 section.five .actions button {
   border: solid 2px #966b9d;
@@ -245,6 +244,7 @@ section.five .actions button {
 section.five .actions button:first-of-type {
   background-color: #966b9d;
   color: #fff4ec;
+  margin-bottom: 1rem;
 }
 section.five .actions button:last-of-type {
   color: #966b9d;
