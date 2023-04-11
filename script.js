@@ -115,3 +115,13 @@ const whatsApp = () => {
         window.open(`https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsAPp)}`, "_blank")
       }, 5000);
 }
+
+const alertazinha = () => {
+    alert(`Parabéns, você conseguiu clicar no botão! Você acabou de desbloquear a "Ficada", isso significa que você me deve um beijo ❤️`)
+}
+
+document.addEventListener("keydown", (ev) => {
+    if (ev.keyCode === 71 || ev.key === "g") {
+        document.querySelector(".btnrun").removeAttribute("id")
+    }
+})

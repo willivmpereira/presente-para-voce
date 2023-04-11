@@ -7,6 +7,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 0px;
+}
 
 section {
   height: 100vh;
@@ -260,4 +263,18 @@ canvas {
   100% {
     transform: translateY(-10px);
   }
+}
+#runaway-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 6px 5px 8px black;
+  background-color: #966b9d;
+  color: #fff4ec;
 }/*# sourceMappingURL=style.css.map */
