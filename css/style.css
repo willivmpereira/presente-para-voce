@@ -64,7 +64,7 @@ section.one button {
   cursor: pointer;
   display: inline-block;
   margin-top: 1.5rem;
-  animation: buttonStart 3s linear 2s infinite alternate;
+  animation: buttonStart 1s linear infinite alternate;
 }
 section.two {
   display: none;
@@ -72,7 +72,7 @@ section.two {
   text-align: center;
 }
 section.two h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 2.2rem;
   margin-bottom: 1rem;
   color: #e7cfbc;
@@ -113,7 +113,7 @@ section.two button.animation {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
-  animation: buttonStart 3s linear infinite alternate;
+  animation: buttonStart 1s linear infinite alternate;
 }
 section.three {
   display: none;
@@ -121,10 +121,10 @@ section.three {
   text-align: center;
 }
 section.three h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
   margin-bottom: 1rem;
   color: #e7cfbc;
-  line-height: 2.2rem;
 }
 section.three ul {
   list-style: none;
@@ -164,7 +164,7 @@ section.three button.animation {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
-  animation: buttonStart 3s linear infinite alternate;
+  animation: buttonStart 1s linear infinite alternate;
 }
 section.four {
   display: none;
@@ -173,7 +173,8 @@ section.four {
   padding: 2rem 0;
 }
 section.four h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
   margin-bottom: 1rem;
   color: #e7cfbc;
 }
@@ -218,7 +219,7 @@ section.four button.animation {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
-  animation: buttonStart 3s linear infinite alternate;
+  animation: buttonStart 1s linear infinite alternate;
 }
 section.five {
   display: none;

@@ -106,13 +106,13 @@ const whatsApp = () => {
     const dia = localStorage.getItem("dia");
     const hora = localStorage.getItem("hora");
   
-      const mensagemWhatsAPp = `Fechou vida!, vamos de ${comida} ${
+      const mensagemWhatsApp = `Fechou vida!, vamos de ${comida} ${
       dia == "Sábado" || dia == "Domingo" ? "no " + dia : "na " + dia
     }, pode passar aqui em casa às ${hora}❤️😘`
 
     setTimeout(() => {
-        window.open(`https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsAPp)}`, "_blank")
-      }, 5000);
+      window.location.href = `https://wa.me/${encodeURIComponent(number)}?text=${encodeURIComponent(mensagemWhatsApp)}`
+      }, 3000);
 }
 
 const alertazinha = () => {

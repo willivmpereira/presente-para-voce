@@ -74,7 +74,7 @@ section {
             cursor: pointer;
             display: inline-block;
             margin-top: 1.5rem;
-            animation: buttonStart 3s linear 2s infinite alternate;
+            animation: buttonStart 1s linear infinite alternate;
         }
     }
 
@@ -84,7 +84,7 @@ section {
         text-align: center;
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.7rem;
             line-height: 2.2rem;
             margin-bottom: 1rem;
             color: $champagne;
@@ -129,7 +129,7 @@ section {
                 transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
-                animation: buttonStart 3s linear infinite alternate;
+                animation: buttonStart 1s linear infinite alternate;
             }
         }
     }
@@ -140,10 +140,10 @@ section {
         text-align: center;
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.7rem;
+            line-height: 2.2rem;
             margin-bottom: 1rem;
             color: $champagne;
-            line-height: 2.2rem;
         }
         
         ul {
@@ -188,7 +188,7 @@ section {
                 transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
-                animation: buttonStart 3s linear infinite alternate;
+                animation: buttonStart 1s linear infinite alternate;
             }
         }
     }
@@ -200,7 +200,8 @@ section {
         padding: 2rem 0;
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.7rem;
+            line-height: 2.2rem;
             margin-bottom: 1rem;
             color: $champagne;
         }
@@ -250,7 +251,7 @@ section {
                 transform: translateY(0);
                 opacity: 1;
                 visibility: visible;
-                animation: buttonStart 3s linear infinite alternate;
+                animation: buttonStart 1s linear infinite alternate;
             }
         }
     }
