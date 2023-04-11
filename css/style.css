@@ -19,6 +19,12 @@ section {
   align-items: center;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  section {
+    height: auto;
+    padding: 2rem 0;
+  }
+}
 section .container {
   max-width: 780px;
   margin: 0 auto;
