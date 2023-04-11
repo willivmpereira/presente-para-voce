@@ -111,7 +111,7 @@ const whatsApp = () => {
     }, pode passar aqui em casa às ${hora}❤️😘`
 
     setTimeout(() => {
-        window.open(`https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsAPp)}`, "_blank")
+        window.open(`https://wa.me/${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsAPp)}`, "_blank")
       }, 5000);
 }
 
