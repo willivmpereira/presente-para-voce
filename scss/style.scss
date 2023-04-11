@@ -41,6 +41,13 @@ section {
             color: $champagne;
         }
 
+        span {
+            display: block;
+            font-size: 0.5rem;
+            margin-top: 2rem;
+            color: $champagne;
+        }
+
         button {
             background-color: transparent;
             border: solid 2px $champagne;
@@ -52,6 +59,7 @@ section {
             cursor: pointer;
             display: inline-block;
             margin-top: 1.5rem;
+            animation: buttonStart 3s linear 2s infinite alternate;
         }
     }
 
@@ -71,11 +79,12 @@ section {
             padding: 0;
 
             li {
+                cursor: pointer;
                 margin-bottom: 1rem;
                 font-weight: 500;
                 font-size: 1.25rem;
                 color: $champagne;
-                border-bottom: 1px $champagne solid;
+                border: solid 1px transparent;
 
                 &.active {
                     border: 1px $champagne solid;
@@ -86,7 +95,6 @@ section {
         }
 
         button {
-            display: none;
             background-color: transparent;
             border: solid 2px $champagne;
             border-radius: 10rem;
@@ -96,6 +104,17 @@ section {
             font-size: 1.25rem;
             cursor: pointer;
             margin-top: 1.5rem;
+            transform: translateY(80px);
+            visibility: hidden;
+            opacity: 0;
+            transition: all .65s ease-in-out;
+
+            &.animation {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+                animation: buttonStart 3s linear infinite alternate;
+            }
         }
     }
 
@@ -116,23 +135,24 @@ section {
             padding: 0;
 
             li {
+                cursor: pointer;
                 font-size: 1.25rem;
                 margin-bottom: 1rem;
                 font-weight: 500;
                 color: $champagne;
+                border: solid 1px transparent;
                 
                 &.active {
                     border: 1px $champagne solid;
                     border-radius: 10rem;
                     background: rgba(231, 207, 188, 0.192);
-                    max-width: 200px;
+                    max-width: 150px;
                     margin: 0 auto 1rem auto;
                 }
             }
         }
 
         button {
-            display: none;
             background-color: transparent;
             border: solid 2px $champagne;
             border-radius: 10rem;
@@ -142,6 +162,18 @@ section {
             font-size: 1.25rem;
             cursor: pointer;
             margin-top: 1.5rem;
+
+            transform: translateY(80px);
+            visibility: hidden;
+            opacity: 0;
+            transition: all .65s ease-in-out;
+
+            &.animation {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+                animation: buttonStart 3s linear infinite alternate;
+            }
         }
     }
 
@@ -150,10 +182,6 @@ section {
         background-color: $primary;
         text-align: center;
         padding: 2rem 0;
-
-        @media screen and (max-width: 768px) {
-            height: auto;
-        }
 
         h2 {
             font-size: 2rem;
@@ -164,12 +192,17 @@ section {
         ul {
             list-style: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
             li {
+                cursor: pointer;
                 font-size: 1.25rem;
                 margin-bottom: 1rem;
                 font-weight: 500;
                 color: $champagne;
+                border: solid 1px transparent;
+                width: 100%;
 
                 &.active {
                     border: 1px $champagne solid;
@@ -182,7 +215,6 @@ section {
         }
 
         button {
-            display: none;
             background-color: transparent;
             border: solid 2px $champagne;
             border-radius: 10rem;
@@ -192,12 +224,25 @@ section {
             font-size: 1.25rem;
             cursor: pointer;
             margin-top: 1.5rem;
+
+            transform: translateY(80px);
+            visibility: hidden;
+            opacity: 0;
+            transition: all .65s ease-in-out;
+
+            &.animation {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+                animation: buttonStart 3s linear infinite alternate;
+            }
         }
     }
 
     &.five {
         display: none;
         background-color: $fawn;
+        position: relative;
 
         .actions {
 
@@ -215,6 +260,7 @@ section {
                 border-radius: 10rem;
                 min-width: 300px;
                 margin: 0 auto;
+                cursor: pointer;
                 
     
                 &:first-of-type {
@@ -240,4 +286,23 @@ section {
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.25rem;
+}
+
+canvas {
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: -9px;
+}
+
+@keyframes buttonStart {
+    0%{
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
 }

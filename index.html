@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oie?</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/confetti.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
@@ -13,10 +14,12 @@
   <body>
     <section class="one">
         <div class="container">
-            <h1>Olá, Nome!</h1>
+            <h1>Olá, Gio!</h1>
             <p>Seja bem-vindo a essa página que criei utilizando minhas habilidades de tecnologias e com muito ❤️ <br>
             Espero que goste e se divirta!</p>
+            <span>É apenas uma pesquisa para o meu TCC 😉</span>
             <button id="start">Começar</button>
+
         </div>
     </section>
     <section class="two">
@@ -51,7 +54,7 @@
     </section>
     <section class="four">
         <div class="container">
-            <h2>Qual o horário mais topzera que você gostaria de fazer essa refeição?</h2>
+            <h2>Qual o horário mais topzera que você gostaria de fazer essa refeição? 😋</h2>
             <ul>
                 <li>18:00 😀</li>
                 <li>18:30 😁</li>
@@ -59,7 +62,7 @@
                 <li>19:30 🤗</li>
                 <li>20:00 😘</li>
                 <li>20:30 😋</li>
-                <li>21:00 🤨</li>
+                <li>21:00 🤭</li>
                 <li>21:30 😝</li>
                 <li>22:00 🥳</li>
                 <li>22:30 😎</li>
@@ -74,14 +77,21 @@
     </section>
 
     <section class="five">
+        <canvas id="canvas"></canvas>
         <div class="container">
             <p id="confirm"></p>
             <div class="actions">
-                <button>Sim 🥳</button>
-                <button disabled>Sim novamente 🥳🥳</button>
+                <button id="button" class="ready" onclick="clickButton(); whatsApp()">Sim 😍</button>
+                <button id="startButton">Sim novamente 🥳🥳🥳</button>
             </div>
         </div>
     </section>
+    <canvas id="canvas2"></canvas>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="confete.js"></script>
+    <script src="confetti.js"></script>
   </body>
 </html>

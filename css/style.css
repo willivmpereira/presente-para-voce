@@ -32,6 +32,12 @@ section.one p {
   font-size: 1.25rem;
   color: #e7cfbc;
 }
+section.one span {
+  display: block;
+  font-size: 0.5rem;
+  margin-top: 2rem;
+  color: #e7cfbc;
+}
 section.one button {
   background-color: transparent;
   border: solid 2px #e7cfbc;
@@ -43,6 +49,7 @@ section.one button {
   cursor: pointer;
   display: inline-block;
   margin-top: 1.5rem;
+  animation: buttonStart 3s linear 2s infinite alternate;
 }
 section.two {
   display: none;
@@ -59,11 +66,12 @@ section.two ul {
   padding: 0;
 }
 section.two ul li {
+  cursor: pointer;
   margin-bottom: 1rem;
   font-weight: 500;
   font-size: 1.25rem;
   color: #e7cfbc;
-  border-bottom: 1px #e7cfbc solid;
+  border: solid 1px transparent;
 }
 section.two ul li.active {
   border: 1px #e7cfbc solid;
@@ -71,7 +79,6 @@ section.two ul li.active {
   background: rgba(231, 207, 188, 0.192);
 }
 section.two button {
-  display: none;
   background-color: transparent;
   border: solid 2px #e7cfbc;
   border-radius: 10rem;
@@ -81,6 +88,16 @@ section.two button {
   font-size: 1.25rem;
   cursor: pointer;
   margin-top: 1.5rem;
+  transform: translateY(80px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+}
+section.two button.animation {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  animation: buttonStart 3s linear infinite alternate;
 }
 section.three {
   display: none;
@@ -97,20 +114,21 @@ section.three ul {
   padding: 0;
 }
 section.three ul li {
+  cursor: pointer;
   font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: 500;
   color: #e7cfbc;
+  border: solid 1px transparent;
 }
 section.three ul li.active {
   border: 1px #e7cfbc solid;
   border-radius: 10rem;
   background: rgba(231, 207, 188, 0.192);
-  max-width: 200px;
+  max-width: 150px;
   margin: 0 auto 1rem auto;
 }
 section.three button {
-  display: none;
   background-color: transparent;
   border: solid 2px #e7cfbc;
   border-radius: 10rem;
@@ -120,17 +138,22 @@ section.three button {
   font-size: 1.25rem;
   cursor: pointer;
   margin-top: 1.5rem;
+  transform: translateY(80px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+}
+section.three button.animation {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  animation: buttonStart 3s linear infinite alternate;
 }
 section.four {
   display: none;
   background-color: #966b9d;
   text-align: center;
   padding: 2rem 0;
-}
-@media screen and (max-width: 768px) {
-  section.four {
-    height: auto;
-  }
 }
 section.four h2 {
   font-size: 2rem;
@@ -140,12 +163,17 @@ section.four h2 {
 section.four ul {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 section.four ul li {
+  cursor: pointer;
   font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: 500;
   color: #e7cfbc;
+  border: solid 1px transparent;
+  width: 100%;
 }
 section.four ul li.active {
   border: 1px #e7cfbc solid;
@@ -155,7 +183,6 @@ section.four ul li.active {
   margin: 0 auto 1rem auto;
 }
 section.four button {
-  display: none;
   background-color: transparent;
   border: solid 2px #e7cfbc;
   border-radius: 10rem;
@@ -165,10 +192,21 @@ section.four button {
   font-size: 1.25rem;
   cursor: pointer;
   margin-top: 1.5rem;
+  transform: translateY(80px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+}
+section.four button.animation {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  animation: buttonStart 3s linear infinite alternate;
 }
 section.five {
   display: none;
   background-color: #f2b880;
+  position: relative;
 }
 section.five .actions {
   display: flex;
@@ -184,6 +222,7 @@ section.five .actions button {
   border-radius: 10rem;
   min-width: 300px;
   margin: 0 auto;
+  cursor: pointer;
 }
 section.five .actions button:first-of-type {
   background-color: #966b9d;
@@ -202,4 +241,22 @@ section.five .actions button:last-of-type {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 1.25rem;
+}
+
+canvas {
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: -9px;
+}
+
+@keyframes buttonStart {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }/*# sourceMappingURL=style.css.map */

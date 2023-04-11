@@ -1,0 +1,23 @@
+/* canvas {
+    top: 0;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  #content {
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    color: silver;
+    font-family: verdana;
+    font-size: 45px;
+    font-weight: bold;
+  }
+   */
