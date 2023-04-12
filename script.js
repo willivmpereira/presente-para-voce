@@ -122,16 +122,12 @@ const whatsApp = () => {
     }, pode passar aqui em casa às ${hora}❤️😘`
 
     setTimeout(() => {
-
       if (isMobile()) {
-        window.open(`https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsAPp)}`, "_blank")
-
-
+        window.open(`https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsApp)}`, "_blank")
       } else {
-        window.open(`https://web.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsAPp)}`, "_blank")
+        window.open(`https://web.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(mensagemWhatsApp)}`, "_blank")
       }
-
-      }, 3000);
+    }, 3000);
 }
 
 const alertazinha = () => {
@@ -143,5 +139,3 @@ document.addEventListener("keydown", (ev) => {
         document.querySelector(".btnrun").removeAttribute("id")
     }
 })
-
-console.log(isMobile())
